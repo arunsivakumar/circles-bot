@@ -13,6 +13,11 @@
 		4032EED6202CAAF8008B962A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4032EED4202CAAF8008B962A /* Main.storyboard */; };
 		4032EED8202CAAF8008B962A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4032EED7202CAAF8008B962A /* Assets.xcassets */; };
 		4032EEDB202CAAF8008B962A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4032EED9202CAAF8008B962A /* LaunchScreen.storyboard */; };
+		4032EEE3202CAF94008B962A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032EEE2202CAF94008B962A /* User.swift */; };
+		4032EEE5202CC4BD008B962A /* ChatStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032EEE4202CC4BD008B962A /* ChatStore.swift */; };
+		4032EEE7202CC90D008B962A /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032EEE6202CC90D008B962A /* NetworkHelper.swift */; };
+		4032EEE9202CCEDF008B962A /* MicrosoftAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032EEE8202CCEDF008B962A /* MicrosoftAPI.swift */; };
+		40BAF78D202D96460065DD27 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BAF78C202D96460065DD27 /* Credentials.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		4032EED7202CAAF8008B962A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4032EEDA202CAAF8008B962A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4032EEDC202CAAF8008B962A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4032EEE2202CAF94008B962A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4032EEE4202CC4BD008B962A /* ChatStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatStore.swift; sourceTree = "<group>"; };
+		4032EEE6202CC90D008B962A /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		4032EEE8202CCEDF008B962A /* MicrosoftAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrosoftAPI.swift; sourceTree = "<group>"; };
+		40BAF78C202D96460065DD27 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		73313EBC89385F3A5F8AAAB8 /* Pods_CirclesBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CirclesBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		796EB1E3A0D1275015AC2956 /* Pods-CirclesBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CirclesBot.release.xcconfig"; path = "Pods/Target Support Files/Pods-CirclesBot/Pods-CirclesBot.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +85,11 @@
 				4032EED7202CAAF8008B962A /* Assets.xcassets */,
 				4032EED9202CAAF8008B962A /* LaunchScreen.storyboard */,
 				4032EEDC202CAAF8008B962A /* Info.plist */,
+				4032EEE2202CAF94008B962A /* User.swift */,
+				4032EEE4202CC4BD008B962A /* ChatStore.swift */,
+				4032EEE6202CC90D008B962A /* NetworkHelper.swift */,
+				4032EEE8202CCEDF008B962A /* MicrosoftAPI.swift */,
+				40BAF78C202D96460065DD27 /* Credentials.swift */,
 			);
 			path = CirclesBot;
 			sourceTree = "<group>";
@@ -167,11 +182,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CirclesBot/Pods-CirclesBot-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -219,7 +240,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4032EED3202CAAF8008B962A /* ViewController.swift in Sources */,
+				4032EEE9202CCEDF008B962A /* MicrosoftAPI.swift in Sources */,
 				4032EED1202CAAF8008B962A /* AppDelegate.swift in Sources */,
+				40BAF78D202D96460065DD27 /* Credentials.swift in Sources */,
+				4032EEE7202CC90D008B962A /* NetworkHelper.swift in Sources */,
+				4032EEE3202CAF94008B962A /* User.swift in Sources */,
+				4032EEE5202CC4BD008B962A /* ChatStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +411,7 @@
 				4032EEE1202CAAF8008B962A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
