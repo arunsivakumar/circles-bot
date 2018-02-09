@@ -16,6 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        let rootVC = window!.rootViewController as! UINavigationController
+        let VC = rootVC.topViewController as! ViewController
+        VC.chatStore = ChatStore()
+        
+//        let parameters: [String: String] = [
+//            "question":"whats is circles life"
+//        ]
+//
+//        
+//        NetworkHelper.postRequest(url: "https://westus.api.cognitive.microsoft.com/qnamaker/v2.0/knowledgebases/e9126937-83ed-4adf-bb61-17e642b1748e/generateAnswer", params: parameters, header: ["Ocp-Apim-Subscription-Key":"a74ef73882bc4069b20d7763be26c8b6"]) { (_) in
+//            
+//        }
+        
         return true
     }
 
