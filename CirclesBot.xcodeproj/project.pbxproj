@@ -17,7 +17,7 @@
 		4032EEE5202CC4BD008B962A /* ChatStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032EEE4202CC4BD008B962A /* ChatStore.swift */; };
 		4032EEE7202CC90D008B962A /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032EEE6202CC90D008B962A /* NetworkHelper.swift */; };
 		4032EEE9202CCEDF008B962A /* MicrosoftAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032EEE8202CCEDF008B962A /* MicrosoftAPI.swift */; };
-		40BAF78D202D96460065DD27 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BAF78C202D96460065DD27 /* Credentials.swift */; };
+		40BAF78F202D990B0065DD27 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BAF78E202D990B0065DD27 /* Credentials.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		4032EEE4202CC4BD008B962A /* ChatStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatStore.swift; sourceTree = "<group>"; };
 		4032EEE6202CC90D008B962A /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		4032EEE8202CCEDF008B962A /* MicrosoftAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrosoftAPI.swift; sourceTree = "<group>"; };
-		40BAF78C202D96460065DD27 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		40BAF78E202D990B0065DD27 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		73313EBC89385F3A5F8AAAB8 /* Pods_CirclesBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CirclesBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		796EB1E3A0D1275015AC2956 /* Pods-CirclesBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CirclesBot.release.xcconfig"; path = "Pods/Target Support Files/Pods-CirclesBot/Pods-CirclesBot.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +89,7 @@
 				4032EEE4202CC4BD008B962A /* ChatStore.swift */,
 				4032EEE6202CC90D008B962A /* NetworkHelper.swift */,
 				4032EEE8202CCEDF008B962A /* MicrosoftAPI.swift */,
-				40BAF78C202D96460065DD27 /* Credentials.swift */,
+				40BAF78E202D990B0065DD27 /* Credentials.swift */,
 			);
 			path = CirclesBot;
 			sourceTree = "<group>";
@@ -242,7 +242,7 @@
 				4032EED3202CAAF8008B962A /* ViewController.swift in Sources */,
 				4032EEE9202CCEDF008B962A /* MicrosoftAPI.swift in Sources */,
 				4032EED1202CAAF8008B962A /* AppDelegate.swift in Sources */,
-				40BAF78D202D96460065DD27 /* Credentials.swift in Sources */,
+				40BAF78F202D990B0065DD27 /* Credentials.swift in Sources */,
 				4032EEE7202CC90D008B962A /* NetworkHelper.swift in Sources */,
 				4032EEE3202CAF94008B962A /* User.swift in Sources */,
 				4032EEE5202CC4BD008B962A /* ChatStore.swift in Sources */,
