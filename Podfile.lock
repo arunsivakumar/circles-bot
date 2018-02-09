@@ -1,12 +1,21 @@
 PODS:
-  - MessageKit (0.10.2)
+  - Alamofire (4.5.1)
+  - JSQMessagesViewController (7.3.5):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
-  - MessageKit
+  - Alamofire (~> 4.4)
+  - JSQMessagesViewController
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
-  MessageKit: 2642b9641290691650cfa2612ad672512799a71c
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 7111effc73ec0f03fb851b7beb877cf0c8a12837
+PODFILE CHECKSUM: d98ff34bcd7c9905c674cc184b49bba0d4962021
 
 COCOAPODS: 1.3.1

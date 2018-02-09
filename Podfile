@@ -4,15 +4,8 @@
 
 target 'CirclesBot' do
     use_frameworks!
-    pod 'MessageKit'
-    post_install do |installer|
-        installer.pods_project.targets.each do |target|
-            if target.name == 'MessageKit'
-                target.build_configurations.each do |config|
-                    config.build_settings['SWIFT_VERSION'] = '4.0'
-                end
-            end
-        end
-    end
+    pod 'SwiftyJSON'
+    pod 'Alamofire', '~> 4.4'
+    pod 'JSQMessagesViewController'
 
 end
