@@ -57,8 +57,8 @@ class ViewController: JSQMessagesViewController {
     
     private func setupUI(){
         self.navigationItem.title = "CirclesBot"
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 15/255, green: 131/255, blue: 255/255, alpha: 1.0)
-        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.barTintColor = Colors.defaultBlueColor
+            self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
     }
     
@@ -67,7 +67,7 @@ class ViewController: JSQMessagesViewController {
         // messages
         
         let incomingMessageColor = UIColor.lightGray
-        let outgoingMessageColor = UIColor.blue
+        let outgoingMessageColor = Colors.defaultBlueColor
         incomingMessage = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImage(with: incomingMessageColor)
         outgoingMessage = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImage(with: outgoingMessageColor)
         
