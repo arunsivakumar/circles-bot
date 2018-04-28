@@ -47,8 +47,6 @@ struct MicrosoftAPI{
             return .failure(MicrosoftError.processingJSON)
         }
     }
-
-
 }
 
 class MicrosoftAPIRequest{
